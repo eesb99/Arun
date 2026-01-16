@@ -1,0 +1,71 @@
+{
+  "mcpServers": {
+    "cbioportal": {
+      "type": "stdio",
+      "command": "/Users/thianseongyee/.claude/mcp-servers/cbioportal-mcp/.venv/bin/cbioportal-mcp",
+      "args": [],
+      "env": {},
+      "description": "cBioPortal cancer genomics database with async API support"
+    },
+    "chembl": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/thianseongyee/.claude/mcp-servers/ChEMBL-MCP-Server/build/index.js"
+      ],
+      "env": {},
+      "description": "ChEMBL chemical database with 27 drug discovery tools"
+    },
+    "pubmed": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/pubmed-mcp-server"
+      ],
+      "env": {},
+      "description": "PubMed biomedical literature search. BEST FOR: Clinical studies, research papers, systematic reviews. NOT FOR: Full-text papers (use paper-qa-mcp). Returns: Article metadata, abstracts, PMIDs."
+    },
+    "uniprot": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/thianseongyee/.claude/mcp-servers/UniProt-MCP-Server/build/index.js"
+      ],
+      "env": {},
+      "description": "UniProt protein database with 26 bioinformatics tools"
+    },
+    "reactome-server": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/thianseongyee/Development/mcp-servers/Reactome-MCP-Server/build/index.js"
+      ],
+      "env": {},
+      "description": "Reactome biological pathway database. BEST FOR: Pathway analysis, reaction networks, biological processes. NOT FOR: Metabolic pathways only (use KEGG). Returns: Pathways, reactions, entities."
+    },
+    "clinicaltrials": {
+      "type": "stdio",
+      "command": "/Users/thianseongyee/.bun/bin/bun",
+      "args": [
+        "/Users/thianseongyee/Development/mcp-servers/clinicaltrialsgov-mcp-server/dist/index.js"
+      ],
+      "env": {
+        "MCP_TRANSPORT_TYPE": "stdio",
+        "MCP_LOG_LEVEL": "error",
+        "LOGS_DIR": "/Users/thianseongyee/Development/mcp-servers/clinicaltrialsgov-mcp-server/logs"
+      },
+      "description": "ClinicalTrials.gov trial registry search. BEST FOR: Active/completed trials, eligibility criteria, trial status. NOT FOR: Raw trial data (use AACT). Returns: Trial summaries, NCT IDs, study details."
+    },
+    "pubchem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/pubchem-mcp-server"
+      ],
+      "env": {},
+      "description": "PubChem chemical compound database. BEST FOR: Chemical structures, properties, safety data. NOT FOR: Bioactivity data (use ChEMBL). Returns: Compound info, CIDs, 2D/3D structures."
+    }
+  }
+}
