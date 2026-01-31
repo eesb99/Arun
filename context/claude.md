@@ -2,8 +2,9 @@
 
 ## Current State
 - **Project**: Advanced EGFR+ NSCLC treatment research for patient case
-- **Status**: Research complete, MCP tools configured
-- **Last Updated**: 2026-01-16
+- **Status**: Session 2 complete - Comprehensive treatment recommendations generated
+- **Last Updated**: 2026-02-01
+- **Repository**: https://github.com/eesb99/Arun (private)
 
 ## Patient Case Summary
 - **Diagnosis**: Metastatic NSCLC with EGFR exon 20 and 21 mutations
@@ -78,3 +79,67 @@
 
 ### Plan File
 `~/.claude/plans/gentle-mapping-feather.md` - Full treatment research
+
+---
+
+## Session 2 Summary (2026-02-01)
+
+### Goals
+- Execute comprehensive MCP searches across PubMed, ClinicalTrials.gov, ChEMBL, cBioPortal
+- Research cardio-safe chemotherapy options (patient has heart failure)
+- Research renal-safe chemotherapy options (patient has renal dysfunction)
+- Evaluate immunotherapy safety in EGFR-mutant NSCLC
+- Find clinical trials in Southeast Asia (Singapore interest confirmed)
+- Develop cytopenia management plan (low Hb, PLT, WBC)
+
+### Key Research Findings
+
+**Cardio-Safe Chemotherapy:**
+- Carboplatin: Preferred platinum (no significant cardiotoxicity)
+- Lazertinib: Cardio-safer alternative to osimertinib (PMID 40919674)
+- **AVOID:** Bevacizumab (CHF risk), anthracyclines
+
+**Renal-Safe Chemotherapy:**
+- Pemetrexed: **Contraindicated if CrCl <45 mL/min** (PMID 32505078)
+- Carboplatin: Dose-adjustable by Calvert formula
+- EGFR-TKIs: Generally renal-safe
+
+**Immunotherapy Decision:**
+- EGFR-mutant NSCLC has lower ICI efficacy (~10-20% vs 30-40%)
+- Pre-existing cardiac dysfunction increases myocarditis risk
+- Recommendation: Prefer TKI or chemo alone over chemo-IO
+
+**Clinical Trials Found:**
+- 1,271+ trials in Singapore/Malaysia region
+- Key recruiting: REZILIENT3 (zipalertinib), Sunvozertinib adjuvant
+- Patient confirmed interest in Singapore travel
+
+**Cytopenia Management:**
+- G-CSF prophylaxis recommended (2026 AGIHO guidelines, PMID 41570611)
+- ESA consideration if Hb <10 g/dL (caution: thrombosis risk)
+
+### Decisions Made
+- Prioritize EGFR-TKIs over chemo-IO combinations (cardiac safety + EGFR efficacy)
+- Lazertinib as potential cardio-safer alternative to osimertinib
+- Pemetrexed eligibility depends on CrCl (need lab values)
+
+### Files Created
+1. `2026-02-01_arun_treatment_recommendations.md` - Comprehensive treatment synthesis (378 lines)
+
+### MCP Tools Used
+- **PubMed**: 20+ searches (cardiotoxicity, renal safety, G-CSF, EGFR resistance)
+- **ClinicalTrials.gov**: Singapore, Malaysia, Thailand, T790M, exon 20 searches
+- **ChEMBL**: Osimertinib, carboplatin, pemetrexed, gemcitabine profiles
+- **cBioPortal**: 41 lung cancer studies identified, EGFR gene data
+
+### Data Gaps Identified
+- Current lab values needed: Hb, PLT, WBC/ANC, Creatinine/eGFR
+- Cardiac evaluation needed: LVEF, ECG (QTc)
+- EGFR mutation confirmation: T790M vs exon 20ins vs C797S
+
+### Next Steps
+- [ ] Obtain current CBC, CMP, GFR from oncologist
+- [ ] Request cardiology evaluation (LVEF, ECG)
+- [ ] Confirm current EGFR resistance mechanism
+- [ ] Calculate carboplatin dose once GFR known
+- [ ] Assess trial eligibility against actual lab values
