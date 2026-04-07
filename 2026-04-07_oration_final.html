@@ -27,6 +27,17 @@
   .notes li strong { color: #a0a0c0; }
   .print-btn { display: block; margin: 2rem auto; background: #c9a84c; color: #1a1a2e; border: none; padding: 0.7rem 2rem; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.9rem; font-family: 'Helvetica Neue', Arial, sans-serif; }
   .print-btn:hover { background: #dbb85c; }
+  .index-card { margin-top: 2.5rem; padding: 2rem; background: #0f3460; border: 2px solid #c9a84c; border-radius: 10px; }
+  .index-card h3 { color: #c9a84c; font-size: 0.95rem; font-family: 'Helvetica Neue', Arial, sans-serif; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.3rem; }
+  .card-intro { color: #8888aa; font-size: 0.8rem; font-family: 'Helvetica Neue', Arial, sans-serif; margin-bottom: 1.5rem; }
+  .beats { display: flex; flex-direction: column; gap: 0.8rem; }
+  .beat { display: flex; align-items: flex-start; gap: 0.8rem; padding: 0.6rem 0; border-bottom: 1px solid #1a1a3e; }
+  .beat:last-child { border-bottom: none; }
+  .beat-num { color: #c9a84c; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; font-size: 1.1rem; min-width: 1.5rem; }
+  .beat-key { color: #e0e0e0; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; font-size: 0.8rem; min-width: 10rem; text-transform: uppercase; letter-spacing: 1px; padding-top: 2px; }
+  .beat-cue { color: #a0a0c0; font-size: 0.9rem; font-style: italic; }
+  .print-card-btn { display: block; margin: 1.5rem auto 0; background: transparent; color: #c9a84c; border: 1px solid #c9a84c; padding: 0.5rem 1.5rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem; font-family: 'Helvetica Neue', Arial, sans-serif; }
+  .print-card-btn:hover { background: #c9a84c22; }
   .footer-spacer { height: 2rem; }
   @media print {
     body { background: #fff; color: #222; }
@@ -35,8 +46,25 @@
     .header p, .header .subtitle { color: #666; }
     .oration { color: #222; font-size: 12pt; line-height: 1.8; }
     .section-label { color: #666; }
-    .badge, .source, .notes, .print-btn, .timer { display: none; }
+    .badge, .source, .notes, .print-btn, .print-card-btn, .timer { display: none; }
+    .index-card { display: none; }
     .content { max-width: 100%; }
+  }
+  @media print {
+    body.print-card-only .oration,
+    body.print-card-only .badge,
+    body.print-card-only .timer,
+    body.print-card-only .notes,
+    body.print-card-only .print-btn,
+    body.print-card-only .print-card-btn,
+    body.print-card-only .header { display: none; }
+    body.print-card-only .index-card { display: block; border: 2px solid #333; padding: 1.5rem; page-break-inside: avoid; }
+    body.print-card-only .index-card h3 { color: #333; }
+    body.print-card-only .card-intro { color: #666; }
+    body.print-card-only .beat-num { color: #333; }
+    body.print-card-only .beat-key { color: #222; }
+    body.print-card-only .beat-cue { color: #444; }
+    body.print-card-only .beat { border-bottom-color: #ccc; }
   }
 </style>
 </head>
@@ -100,9 +128,31 @@
 
 <button class="print-btn" onclick="window.print()">Print Clean Copy</button>
 
+<div class="index-card">
+<h3>Index Card -- 7 Beats</h3>
+<p class="card-intro">Carry this to the lectern. One glance per beat keeps you on track.</p>
+<div class="beats">
+<div class="beat"><span class="beat-num">1</span><span class="beat-key">OPENING</span><span class="beat-cue">"Five minutes isn't enough for 33 years"</span></div>
+<div class="beat"><span class="beat-num">2</span><span class="beat-key">THE CLINIC, 1993</span><span class="beat-cue">Internet conversation -- "Tell me more"</span></div>
+<div class="beat"><span class="beat-num">3</span><span class="beat-key">THE LUNCHES</span><span class="beat-cue">Gordon, Neo, Voon Loong -- all Brethren and I didn't know. He delivered my second son.</span></div>
+<div class="beat"><span class="beat-num">4</span><span class="beat-key">THE DOCTOR &amp; FAMILY</span><span class="beat-cue">London with nothing, came back surplus. Dr. Kumari. Daughters' dance recitals. Kept flying to grandchildren through chemo.</span></div>
+<div class="beat"><span class="beat-num">5</span><span class="beat-key">THE MASON</span><span class="beat-cue">Masonic objects 1993 -- waited 30 years. COVID/cancer RWM. Tony's soup kitchen. The quiet hand on the shoulder.</span></div>
+<div class="beat"><span class="beat-num">6</span><span class="beat-key">LAST VISIT</span><span class="beat-cue">Dozen brethren. Still planning next chemo. Still Arun.</span></div>
+<div class="beat"><span class="beat-num">7</span><span class="beat-key">CLOSE</span><span class="beat-cue">Turn to family -- "I will not forget him." Then brethren -- "From darkness to light. So mote it be."</span></div>
+</div>
+<button class="print-card-btn" onclick="printCard()">Print Index Card Only</button>
+</div>
+
 </div>
 
 <div class="footer-spacer"></div>
 
+<script>
+function printCard() {
+  document.body.classList.add('print-card-only');
+  window.print();
+  document.body.classList.remove('print-card-only');
+}
+</script>
 </body>
 </html>
