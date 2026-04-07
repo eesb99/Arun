@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lodge of Sorrow Oration -- Bro. Dr. Arun Bag, Past Master</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #1a1a2e; color: #e0e0e0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #16213e, #0f3460); padding: 2rem; text-align: center; border-bottom: 2px solid #c9a84c; }
+  .header h1 { color: #c9a84c; font-size: 1.6rem; letter-spacing: 2px; margin-bottom: 0.5rem; }
+  .header p { color: #a0a0c0; font-size: 0.95rem; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 0; background: #16213e; border-bottom: 2px solid #0f3460; padding: 0 1rem; }
+  .tab { padding: 0.8rem 1.2rem; cursor: pointer; color: #8888aa; font-size: 0.85rem; font-family: 'Helvetica Neue', Arial, sans-serif; border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; }
+  .tab:hover { color: #c9a84c; }
+  .tab.active { color: #c9a84c; border-bottom-color: #c9a84c; }
+  .tone-badge { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; margin-left: 6px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+  .content { max-width: 750px; margin: 2rem auto; padding: 0 2rem; }
+  .version { display: none; }
+  .version.active { display: block; }
+  .version h3 { color: #c9a84c; margin-bottom: 0.3rem; font-size: 1.1rem; }
+  .version .desc { color: #8888aa; font-size: 0.85rem; font-family: 'Helvetica Neue', Arial, sans-serif; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #2a2a4e; }
+  .oration { line-height: 1.9; font-size: 1.05rem; color: #d8d8e8; }
+  .oration p { margin-bottom: 1.2rem; text-indent: 0; }
+  .oration .section-label { color: #c9a84c; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; font-family: 'Helvetica Neue', Arial, sans-serif; margin-bottom: 0.4rem; margin-top: 2rem; }
+  .oration .section-label:first-child { margin-top: 0; }
+  .oration em { color: #e8c86c; font-style: italic; }
+  .timer { text-align: center; margin-top: 2rem; padding: 1rem; background: #16213e; border-radius: 8px; }
+  .timer span { color: #c9a84c; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.85rem; }
+  .word-count { color: #666680; font-size: 0.8rem; font-family: 'Helvetica Neue', Arial, sans-serif; }
+  .compare-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #16213e; border-top: 1px solid #c9a84c; padding: 0.8rem 2rem; display: flex; justify-content: space-between; align-items: center; font-family: 'Helvetica Neue', Arial, sans-serif; z-index: 10; }
+  .compare-bar button { background: #c9a84c; color: #1a1a2e; border: none; padding: 0.5rem 1.2rem; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; }
+  .compare-bar button:hover { background: #dbb85c; }
+  .compare-bar .hint { color: #8888aa; font-size: 0.8rem; }
+  .footer-spacer { height: 60px; }
+  @media (max-width: 600px) {
+    .tabs { overflow-x: auto; }
+    .tab { font-size: 0.75rem; padding: 0.6rem 0.8rem; }
+    .content { padding: 0 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>LODGE OF SORROW ORATION</h1>
+  <p>In Memory of Bro. Dr. Arun Bag, Past Master -- Kilwinning Scottish Lodge</p>
+  <p style="margin-top:0.5rem; font-size:0.8rem; color:#666680;">Delivered by Bro. Thian Seong Yee, Senior Deacon | 6 versions, ~5 minutes each</p>
+</div>
+
+<div class="tabs" id="tabs">
+  <div class="tab active" onclick="show(0)">A. Warm</div>
+  <div class="tab" onclick="show(1)">B. Formal</div>
+  <div class="tab" onclick="show(2)">C. Storyteller</div>
+  <div class="tab" onclick="show(3)">D. Heartfelt</div>
+  <div class="tab" onclick="show(4)">E. Understated</div>
+  <div class="tab" onclick="show(5)">F. Lyrical</div>
+</div>
+
+<div class="content">
+
+<!-- VERSION A: WARM AND CONVERSATIONAL -->
+<div class="version active" id="v0">
+<h3>Version A: Warm and Conversational</h3>
+<div class="desc">Speaks as a friend would -- honest, unhurried, with gentle humour. The room feels like a gathering of people who loved him.</div>
+<div class="oration">
+
+<div class="section-label">Opening</div>
+<p>Right Worshipful Master, Brethren all, and to the beloved family of our late Brother Dr. Arun Bag -- thank you for allowing me to share a few words about a man who meant the world to many of us in this room.</p>
+
+<div class="section-label">The meeting</div>
+<p>I first met Arun in 1993. I was a young medical representative, freshly transferred from Johor Bahru back to Kuala Lumpur, selling painkillers for Syntex. His clinic in Ampang was new. He was new. I was new. And honestly, on that first call, I had run out of things to say about my product. So I started talking about something I had just heard of -- this thing called the internet. I expected polite nodding. Instead, Arun's eyes lit up. We spent the next hour imagining how this technology would change the world. I forgot I was there to sell anything. That conversation, in a way, never really stopped.</p>
+
+<div class="section-label">The friend</div>
+<p>What followed were years of lunches at the Ampang yong tau fu stall and the steam fish head place -- with Gordon, Francis, Neo, and whoever else could join. Arun at the lunch table was something to witness. Quick-witted, scientifically curious, always asking the next question. He made you feel like whatever you were saying was the most interesting thing he had heard all day. That was his gift -- he made people feel seen.</p>
+
+<div class="section-label">The doctor and family man</div>
+<p>Arun trained in London, working part-time hospital shifts to pay his way. He started in orthopaedics before finding his calling in obstetrics and gynaecology. He was recognised for his dedication -- not because he sought recognition, but because you simply could not ignore the hours he put in and the care he gave. His wife, Dr. Kumari, a paediatrician, stood beside him through it all. Together they raised three remarkable daughters -- all now doctors and professionals, in Australia and the UK. He traveled to see them and his grandchildren as often as he could, even through the difficulties of treatment. He was about to apply for migration to Australia when cancer changed the plan. He adjusted. He did not complain. His family always came first.</p>
+
+<div class="section-label">The Mason</div>
+<p>Here is a detail I love. In 1993, in that clinic, I noticed some unusual objects on display. I asked what they were. He said, simply, "Freemasonry." I was curious, but he did not push. He waited. Thirty years, Brethren. Thirty years until he judged the time was right to bring me into the Craft, with our Brother Gordon as seconder. That patience -- that quiet discernment about when a man is ready -- that was Arun practising Masonry long before I understood what it meant.</p>
+
+<p>His year as Right Worshipful Master fell during COVID-19, and he had just been diagnosed with non-small cell lung cancer. The Brothers knew. He led us anyway -- from a screen, through virtual meetings, through a year when the world itself felt uncertain. He gave to the soup kitchen, contributed to lodge charity, helped patients who could not pay, and offered his medical knowledge to any Brother who needed it. Not grand gestures. Just a steady, quiet current of generosity that never switched off.</p>
+
+<div class="section-label">The last visit</div>
+<p>Two months before he left us, a dozen of us visited him. And he was still Arun. Still sharp. Still thinking forward. He told us he wanted to continue with the next round of chemotherapy. Six years of treatment, four lines of chemo, and he was still fighting. Not because he feared the alternative, but because that is simply who he was -- a man who showed up.</p>
+
+<div class="section-label">To the family</div>
+<p>To Dr. Kumari, and to Arun's daughters -- your husband and father gave us something we cannot replace. He made us better men. He made this lodge a warmer place. And the friendship he offered was the real thing -- generous, patient, and constant. Thank you for sharing him with us.</p>
+
+<div class="section-label">Close</div>
+<p>Brethren, our Brother has been called from labour to rest by the Grand Architect of the Universe. His working tools are laid down. But the work he built -- in this lodge, in his family, in every life he touched -- that endures. May the memory of Brother Dr. Arun Bag be a blessing to us all.</p>
+
+</div>
+<div class="timer"><span>~620 words | Approx. 4.5-5 minutes at speaking pace</span></div>
+</div>
+
+<!-- VERSION B: DIGNIFIED FORMAL -->
+<div class="version" id="v1">
+<h3>Version B: Dignified and Formal</h3>
+<div class="desc">Measured, ceremonial, befitting the gravity of the ritual. Every sentence carries weight.</div>
+<div class="oration">
+
+<div class="section-label">Opening</div>
+<p>Right Worshipful Master, Wardens, Brethren of Lodge Kilwinning, and honoured guests -- we gather this evening in solemn remembrance of Brother Dr. Arun Bag, Past Master of this lodge, who has passed to the Grand Lodge Above.</p>
+
+<p>It falls to me, as one who had the privilege of calling him both friend and Brother for over three decades, to offer this tribute to his memory.</p>
+
+<div class="section-label">His life and character</div>
+<p>Dr. Arun Bag was a man of discipline, intellect, and quiet strength. Trained in London under modest circumstances, he financed his medical education through part-time hospital work -- a testament to the determination that would define his entire career. Beginning in orthopaedics before specialising in obstetrics and gynaecology, he built a practice in Ampang, Kuala Lumpur, that earned him recognition not through self-promotion, but through the consistent excellence of his care.</p>
+
+<p>He is survived by his wife, Dr. Kumari, a paediatrician, and their three daughters -- accomplished professionals now residing in Australia and the United Kingdom. To his family, he was devoted beyond measure, traveling to be with his children and grandchildren even as his health declined over six years of cancer treatment.</p>
+
+<div class="section-label">Our acquaintance</div>
+<p>I first met Dr. Arun Bag in 1993, when I was a pharmaceutical representative newly returned to Kuala Lumpur. Our professional acquaintance quickly became a friendship -- built over shared meals and a mutual fascination with ideas. He possessed a rare combination: scientific rigour and genuine warmth. He could discuss emerging technologies with the same enthusiasm as he enquired after your family.</p>
+
+<div class="section-label">His Masonic life</div>
+<p>Brother Arun was already a Mason when we met. I observed the symbols of the Craft in his clinic, though I did not then understand their significance. It would be thirty years before he proposed my admission to the Craft -- with Brother Gordon, his schoolmate from Victoria Institution, as seconder. In this, as in all things, he exercised patience and judgement. He did not recruit. He waited until a man was ready.</p>
+
+<p>His tenure as Right Worshipful Master coincided with two extraordinary trials: the COVID-19 pandemic and his own diagnosis of non-small cell lung cancer. He led this lodge through virtual meetings with characteristic composure, never seeking sympathy, never diminishing his commitment to the Brethren. His contributions to charity -- the soup kitchen, lodge welfare, assistance to patients in need -- were given without fanfare and without expectation of gratitude.</p>
+
+<div class="section-label">His final days</div>
+<p>When a number of Brethren visited him in his final months, we found him as we had always known him: clear of mind, resolute in spirit, and looking ahead to the next course of treatment. After six years and four lines of chemotherapy, he remained undaunted. This was not denial. It was courage.</p>
+
+<div class="section-label">To the family</div>
+<p>To Dr. Kumari and to the daughters of our late Brother -- this lodge is indebted to your family. The man you loved gave generously of himself to this fraternity, and we are the better for it.</p>
+
+<div class="section-label">Close</div>
+<p>Right Worshipful Master, the Great Architect of the Universe has summoned our Brother from his earthly labours. His column is broken, but the temple he helped to build stands firm. Let us carry forward his example of charity, fortitude, and brotherly love. May his name be spoken with honour in this lodge for generations to come.</p>
+
+</div>
+<div class="timer"><span>~530 words | Approx. 4-4.5 minutes at speaking pace</span></div>
+</div>
+
+<!-- VERSION C: STORYTELLER -->
+<div class="version" id="v2">
+<h3>Version C: Narrative Storyteller</h3>
+<div class="desc">Structured as three stories that reveal who Arun was. The audience leans in.</div>
+<div class="oration">
+
+<div class="section-label">Opening</div>
+<p>Right Worshipful Master, Brethren, and dear family of our Brother Arun -- let me tell you three stories about the man we are here to remember tonight. They are small stories. But they tell you everything.</p>
+
+<div class="section-label">Story one: the conversation that never ended</div>
+<p>Ampang, 1993. A young drug salesman walks into a new OBGYN clinic. He has a briefcase full of painkiller samples and not much else to say. That salesman was me. The doctor was Arun Bag -- freshly set up, building a practice from nothing. I had exhausted my sales pitch, so out of sheer boredom, I mentioned this new technology I had been reading about. The internet. I expected him to nod politely and reach for his next patient file. Instead, he leaned forward. "Tell me more." For the next hour, we forgot the clinic, the samples, the schedule. We were two men imagining a future that did not exist yet. That was Arun. He could meet a stranger and, within minutes, turn a routine encounter into something electric. I walked in as a salesman. I walked out as his friend. And that conversation -- about what comes next, about what is possible -- continued for thirty-three years, over yong tau fu in Ampang, over steam fish head with Gordon and Francis and Neo, over lodge meetings and family dinners and hospital visits. It only ended on the 28th of March.</p>
+
+<div class="section-label">Story two: the objects on the shelf</div>
+<p>That same day in 1993, I noticed something unusual in his consultation room. Objects I did not recognise -- symbols, shapes, something that looked like it belonged to another century. I asked what they were. He said, "Freemasonry," and smiled. Nothing more. He did not explain. He did not invite. He waited. Brethren, he waited thirty years. When he finally proposed me for the Craft, with Gordon as seconder, it was because he had decided -- in his own time, by his own judgement -- that I was ready. That is the kind of Mason he was. He did not talk about the principles. He lived them. Patience. Discernment. Trust in the process.</p>
+
+<div class="section-label">Story three: the man who kept showing up</div>
+<p>In 2020, Arun became Right Worshipful Master of this lodge. The world shut down. COVID emptied our temple. And in that same year, he was diagnosed with non-small cell lung cancer. He had every reason to step back. He did not. He led us through screens, through uncertainty, through a year unlike any other. Over the next six years, he endured four lines of chemotherapy. He traveled to see his daughters and grandchildren in Australia and the UK. He donated to the soup kitchen. He helped patients who could not pay. He gave medical advice to any Brother who asked. Two months before he died, a dozen of us visited him. He was planning his next round of chemo. He was still showing up.</p>
+
+<div class="section-label">To the family</div>
+<p>Dr. Kumari, and Arun's daughters -- your father trained in London on almost nothing, worked hospital night shifts to pay his way, built a career, raised three remarkable women, and loved his grandchildren with everything he had left. He put you first, always. We were lucky to get whatever time was left over. And it was more than enough.</p>
+
+<div class="section-label">Close</div>
+<p>Brethren, the Grand Architect of the Universe has called our Brother from labour to rest. His working tools are laid down. But these three things remain: a conversation that still inspires us, a patience that taught us the meaning of the Craft, and a man who never stopped showing up. May we honour his memory by doing the same.</p>
+
+</div>
+<div class="timer"><span>~620 words | Approx. 4.5-5 minutes at speaking pace</span></div>
+</div>
+
+<!-- VERSION D: HEARTFELT -->
+<div class="version" id="v3">
+<h3>Version D: Emotionally Open and Heartfelt</h3>
+<div class="desc">Does not hold back. Speaks from the chest. The speaker is visibly moved and that is the strength of it.</div>
+<div class="oration">
+
+<div class="section-label">Opening</div>
+<p>Right Worshipful Master, Brethren, and to Arun's family who are with us tonight -- I have been asked to say a few words about our Brother. I will do my best. But I want to be honest with you: I am not sure five minutes is enough to hold thirty-three years of friendship. So I will give you what I can.</p>
+
+<div class="section-label">How it began</div>
+<p>I met Arun in 1993. I was twenty-something, a medical rep, just transferred back to KL from Johor Bahru with not much to my name except a briefcase and a willingness to talk to anyone. His clinic in Ampang was brand new. He was building everything from scratch. I was supposed to sell him painkillers. Instead, we ended up talking about the internet -- a technology neither of us truly understood -- and for an hour, we were not doctor and salesman. We were just two people excited about the future. That was the beginning. And looking back, I think that is what Arun always did. He turned strangers into friends. He found the thing that connected you and held onto it.</p>
+
+<div class="section-label">Who he was</div>
+<p>Arun trained in London when he had almost no money. He worked night shifts in hospitals to pay his way. He started in orthopaedics, moved to OBGYN, built a respected practice. None of it was handed to him. Dr. Kumari, his wife, a paediatrician, walked that road with him. Together they raised three daughters who are now doctors and professionals in their own right, in Australia and the UK. He was so proud of them. And even as cancer took more and more from his body over six years, he kept flying to see them. He kept holding his grandchildren. He was about to migrate to be closer to them when the diagnosis came. Life changed the plan. He did not let it change his love.</p>
+
+<div class="section-label">What he gave this lodge</div>
+<p>Arun was already a Mason when I met him. I saw the symbols in his clinic in 1993 but did not understand them. He never pushed. He waited thirty years -- thirty years, Brethren -- until he believed I was ready, and then he proposed me, with Gordon as seconder. That patience changed my life. This lodge, these friendships, this journey -- I owe it to him.</p>
+
+<p>He served as Right Worshipful Master during COVID while fighting cancer. He could have stepped aside. He did not. He led from a screen. He gave to charity -- soup kitchens, lodge welfare, patients who could not afford care. He offered his medical knowledge freely to any Brother who needed it. He never counted the cost of kindness.</p>
+
+<div class="section-label">The last time</div>
+<p>Two months ago, a dozen of us went to see him. I did not know it would be the last time. He was tired, yes. But he was still Arun. Still sharp. Still planning. He told us he wanted to try the next round of chemo. Six years of fighting and he was still looking ahead. I think about that visit every day now. I am grateful I was there. I am grateful we all were.</p>
+
+<div class="section-label">To the family</div>
+<p>Dr. Kumari -- your husband was one of the finest men I have ever known. To Arun's daughters -- your father's goodness lives in you. This lodge will not forget him. I will not forget him.</p>
+
+<div class="section-label">Close</div>
+<p>The Grand Architect of the Universe has called our Brother home. His tools are laid down. But what he built -- in this lodge, in his family, in the hearts of everyone here tonight -- that does not end. May his memory be a light to us, always.</p>
+
+</div>
+<div class="timer"><span>~600 words | Approx. 4.5-5 minutes at speaking pace</span></div>
+</div>
+
+<!-- VERSION E: UNDERSTATED -->
+<div class="version" id="v4">
+<h3>Version E: Restrained and Understated</h3>
+<div class="desc">Says less than it feels. Power comes from what is left unsaid. For the speaker who trusts the room to fill the silences.</div>
+<div class="oration">
+
+<div class="section-label">Opening</div>
+<p>Right Worshipful Master, Brethren, members of the Bag family -- I knew Arun for thirty-three years. I will try to do justice to that in a few minutes. Bear with me.</p>
+
+<div class="section-label">The beginning</div>
+<p>We met in 1993. I was a pharmaceutical representative. He was an OBGYN starting a new clinic in Ampang. I was supposed to talk about painkillers. We ended up talking about the internet. It was a better conversation. Most of our conversations were.</p>
+
+<p>After that, it was lunches. Yong tau fu. Steam fish head. Gordon, Francis, Neo. The usual table. For years, that was enough -- a good meal, good talk, a friendship that did not need to be anything more than what it was.</p>
+
+<div class="section-label">The man</div>
+<p>Arun trained in London with very little money and a great deal of determination. He worked hospital shifts to fund his studies. He began in orthopaedics, settled in OBGYN, and built a practice known for its care rather than its size. His wife, Dr. Kumari, is a paediatrician. Their three daughters are now professionals in Australia and the UK. He flew to see them and his grandchildren regularly, even when flying was no longer easy for him. He had been planning to migrate to Australia. Then cancer intervened. He recalibrated. That is the word for it. He recalibrated.</p>
+
+<div class="section-label">The Mason</div>
+<p>I saw Masonic objects in his clinic in 1993. I asked about them. He said one word: "Freemasonry." Then he changed the subject. Thirty years later, he proposed me for the Craft, with Gordon seconding. I have thought about that gap many times. He was not being secretive. He was being precise. He brought people in when they were ready, not before.</p>
+
+<p>He became Right Worshipful Master during COVID, the same year he was diagnosed with lung cancer. He led virtually. He led well. He gave to charity quietly -- soup kitchens, lodge contributions, patients who needed help, Brothers who needed advice. He did not make speeches about generosity. He just did it.</p>
+
+<div class="section-label">The visit</div>
+<p>A dozen of us visited him two months before he passed. He was tired. He was still Arun. He said he wanted to continue with the next round of chemotherapy. Four lines of chemo over six years, and he was still looking forward. I do not have a better way to describe the man than that.</p>
+
+<div class="section-label">To the family</div>
+<p>Dr. Kumari, and Arun's daughters -- he spoke of you often and always with pride. Thank you for the years you shared him with us.</p>
+
+<div class="section-label">Close</div>
+<p>The Grand Architect has called our Brother from labour to rest. His working tools are set aside. The work remains. So does the example. That is enough.</p>
+
+</div>
+<div class="timer"><span>~430 words | Approx. 3.5-4 minutes at speaking pace</span></div>
+</div>
+
+<!-- VERSION F: LYRICAL WITH MASONIC IMAGERY -->
+<div class="version" id="v5">
+<h3>Version F: Lyrical with Masonic Imagery</h3>
+<div class="desc">Weaves Masonic symbolism throughout -- the working tools, the temple, the journey from West to East. Poetic without being ornate.</div>
+<div class="oration">
+
+<div class="section-label">Opening</div>
+<p>Right Worshipful Master, Brethren of Lodge Kilwinning, and to the family who walks beside us in this hour -- we meet tonight on the level, as our Craft teaches, to honour the memory of one who walked among us with uncommon grace: Brother Dr. Arun Bag, Past Master of this lodge.</p>
+
+<div class="section-label">The rough ashlar</div>
+<p>Every Mason begins as rough stone. Arun began as a young man in London, far from home, with little money and much resolve. He worked hospital night shifts to fund his training. He shaped himself -- first in orthopaedics, then in obstetrics and gynaecology -- with the same discipline we are taught to apply chisel to stone. By the time I met him in 1993, in his new clinic in Ampang, the work was already evident. He was not polished in the way of vanity. He was polished in the way of purpose. A man who had made himself useful.</p>
+
+<p>I was a young medical representative that day, selling painkillers. We talked instead about the internet -- a strange, invisible architecture that neither of us could see but both of us believed would change the world. That conversation was the cornerstone of a friendship that lasted thirty-three years.</p>
+
+<div class="section-label">The plumb line</div>
+<p>Arun lived by the plumb -- upright, true, undeviated by convenience. His wife, Dr. Kumari, a paediatrician, and their three daughters -- now professionals in Australia and the UK -- were the centre of his life. He traveled to hold his grandchildren even when his body protested. He had planned to migrate, to be near them. When cancer altered the design, he did not abandon the blueprint. He adapted it. Family remained the bearing wall.</p>
+
+<p>In his practice, he was known for his care of patients who had little. In his friendships -- over yong tau fu and steam fish head with Gordon, Francis, Neo, and myself -- he was known for his wit, his curiosity, and his ability to make every man at the table feel that his words mattered.</p>
+
+<div class="section-label">The square</div>
+<p>I saw the square and compasses in his clinic thirty-three years ago. I asked. He answered with one word and a smile. Then he waited. Thirty years he waited -- until the time was square -- before proposing me for the Craft, with Brother Gordon as seconder. That single act of patience taught me more about Masonry than any lecture I have since received.</p>
+
+<p>His year in the East came during COVID-19, the same season he was diagnosed with non-small cell lung cancer. He governed this lodge from a screen, through darkness, with characteristic steadiness. He gave to the soup kitchen, to lodge charity, to patients who could not pay, to Brothers who needed counsel. He did not speak of sacrifice. The trowel does not announce the mortar it spreads.</p>
+
+<div class="section-label">The setting sun</div>
+<p>Two months before the Grand Architect summoned him, a dozen Brethren gathered at his side. He was weary from six years of treatment, four lines of chemotherapy. Yet he spoke of the next round. He was still building. The temple was unfinished, and he intended to keep working. That is the image I will carry: Arun, tools still in hand, facing the setting sun, unwilling to set them down before the work was done.</p>
+
+<div class="section-label">To the family</div>
+<p>Dr. Kumari, daughters of our Brother -- the lodge that your husband and father helped to build is stronger for his presence and poorer for his absence. We thank you for the years he gave to this fraternity. Know that his name will be spoken here with love.</p>
+
+<div class="section-label">Close</div>
+<p>Brethren, the sun has set on our Brother's earthly labour. His column is lowered. But the temple stands. And in every act of charity, every moment of patience, every hand extended to a Brother in need, the work of Brother Dr. Arun Bag continues. From labour to refreshment. From darkness to light. So mote it be.</p>
+
+</div>
+<div class="timer"><span>~650 words | Approx. 5 minutes at speaking pace</span></div>
+</div>
+
+</div><!-- /content -->
+
+<div class="footer-spacer"></div>
+
+<div class="compare-bar">
+  <span class="hint">Read each version aloud to feel the pace. Pick the one that sounds most like you.</span>
+  <button onclick="window.print()">Print Selected</button>
+</div>
+
+<script>
+function show(n) {
+  document.querySelectorAll('.version').forEach((v,i) => {
+    v.classList.toggle('active', i === n);
+  });
+  document.querySelectorAll('.tab').forEach((t,i) => {
+    t.classList.toggle('active', i === n);
+  });
+}
+</script>
+</body>
+</html>
