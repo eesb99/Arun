@@ -6,6 +6,7 @@
 |-------|--------|------|----------|
 | Phase 1: Research & Planning | Complete | 2026-01-16 | 100% |
 | Phase 2: MCP Queries & Treatment Synthesis | Complete | 2026-02-01 | 100% |
+| Phase 3: Memorial Oration & Project Setup | Complete | 2026-04-07 | 100% |
 
 ---
 
@@ -95,6 +96,33 @@
 
 ---
 
+## Phase 3: Memorial Oration & Project Setup (2026-04-07) - COMPLETE
+
+**Duration:** ~1 hour
+**Status:** 100% - Oration playground created and deployed
+**Commits:** 2 commits (bf2cc6b -> c56be8f)
+
+### Context
+Bro. Dr. Arun Bag passed away 2026-03-28, age 75. User (Bro. Thian Seong Yee, Senior Deacon) asked to deliver oration at Lodge of Sorrow, Kilwinning Scottish Lodge.
+
+### Deliverables
+1. **CLAUDE.md** - Project instructions for Claude Code session continuity
+2. **Oration Playground** - Interactive HTML with 6 tonal versions:
+   - A: Warm and Conversational
+   - B: Dignified and Formal
+   - C: Narrative Storyteller (3 stories)
+   - D: Emotionally Open and Heartfelt
+   - E: Restrained and Understated
+   - F: Lyrical with Masonic Imagery
+3. **GitHub Pages** - https://eesb99.github.io/arun-memorial/ (public, separate repo)
+
+### Scottish Rite Conventions Applied
+- "Brother" (not "Right Worshipful Brother") for members
+- "Right Worshipful Master" for presiding Master
+- "Great Architect of the Universe" (not "Grand Architect")
+
+---
+
 ## Pending Work
 
 ### Phase 3: Lab-Based Personalization (Next Session)
@@ -116,11 +144,11 @@
 
 | Metric | Value |
 |--------|-------|
-| Sessions | 2 |
+| Sessions | 3 |
 | Research topics | 10 (cardiotoxicity, nephrotoxicity, ICI safety, G-CSF, EGFR resistance, exon 20, brain mets, trials, drug profiles, genomics) |
 | MCPs configured | 7 |
 | MCP queries executed | 40+ |
 | PubMed articles reviewed | 500+ |
 | Clinical trials found | 1,271+ |
 | Treatment options identified | 20+ |
-| Output documents | 2 (plan + recommendations) |
+| Output documents | 4 (plan + recommendations + CLAUDE.md + oration playground) |

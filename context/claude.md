@@ -1,10 +1,11 @@
 # Arun Cancer Investigation Project
 
 ## Current State
-- **Project**: Advanced EGFR+ NSCLC treatment research for patient case
-- **Status**: Session 2 complete - Comprehensive treatment recommendations generated
-- **Last Updated**: 2026-02-01
+- **Project**: Advanced EGFR+ NSCLC treatment research for patient case + memorial oration
+- **Status**: Session 3 complete - Lodge of Sorrow oration created, CLAUDE.md initialized
+- **Last Updated**: 2026-04-07
 - **Repository**: https://github.com/eesb99/Arun (private)
+- **Memorial Page**: https://eesb99.github.io/arun-memorial/ (public)
 
 ## Patient Case Summary
 - **Diagnosis**: Metastatic NSCLC with EGFR exon 20 and 21 mutations
@@ -143,3 +144,50 @@
 - [ ] Confirm current EGFR resistance mechanism
 - [ ] Calculate carboplatin dose once GFR known
 - [ ] Assess trial eligibility against actual lab values
+
+---
+
+## Session 3 Summary (2026-04-07)
+
+### Context
+Bro. Dr. Arun Bag passed away on 2026-03-28 at age 75, after 6 years fighting NSCLC (4 lines of chemo). This session shifted from treatment research to memorial preparation.
+
+### Goals
+- Initialize project CLAUDE.md for session continuity
+- Craft Lodge of Sorrow oration for Remembrance Past Master ritual
+- Deploy memorial page for oration review
+
+### Key Facts Gathered (Oration Interview)
+- **User's relationship**: Bro. Thian Seong Yee, Senior Deacon of Kilwinning Scottish Lodge; knew Arun 33 years (since 1993)
+- **First meeting**: User was medical rep (Syntex), bonded with Arun over the internet in his Ampang clinic
+- **Freemasonry**: Arun proposed user after 30 years; Gordon (Victoria Institution schoolmate) as seconder
+- **Arun's career**: Trained London (orthopaedics then OBGYN), self-funded via hospital shifts
+- **Family**: Wife Dr. Kumari (paediatrician), 3 daughters (doctors/professionals in AU & UK)
+- **RWM year**: During COVID-19 + NSCLC diagnosis; led virtually; brothers knew
+- **Character**: Witty, scientific-minded, charitable (soup kitchen, lodge charity, needy patients)
+- **Last visit**: Dozen brethren visited ~2 months before passing; still planning next chemo
+- **Scottish Rite conventions**: "Brother" (not "Right Worshipful Brother"); "Great Architect of the Universe"
+
+### Decisions Made
+- Created 6 oration versions (Warm, Formal, Storyteller, Heartfelt, Understated, Lyrical)
+- Interactive HTML playground with tabbed comparison
+- Separate public repo (eesb99/arun-memorial) for GitHub Pages deployment
+- Scottish Rite terminology confirmed and applied
+
+### Files Created
+1. `CLAUDE.md` - Project instructions for Claude Code
+2. `2026-04-07_oration_playground.html` - 6-version oration playground
+
+### Commits
+- `bf2cc6b` - docs: add CLAUDE.md and Lodge of Sorrow oration playground
+- `c56be8f` - fix: use Great Architect (Scottish Rite) and correct wife name to Dr. Kumari
+
+### External
+- Created public repo: https://github.com/eesb99/arun-memorial
+- GitHub Pages deployed: https://eesb99.github.io/arun-memorial/
+
+### Next Steps
+- [ ] User to choose preferred oration version (or mix sections)
+- [ ] Refine chosen version with additional details/corrections
+- [ ] Practice reading aloud (~5 min target)
+- [ ] Treatment research Phase 3 remains pending (lab values needed)
